@@ -1,0 +1,111 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+---
+
+<Layout title="Frontend Mentor | Pod request access landing page">
+  <main>
+    <section class="">
+      <picture>
+        <source
+          media="(min-width:1440px )"
+          srcset="/assets/desktop/image-host.jpg"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="/assets/tablet/image-host.jpg"
+        />
+        <img src="/assets/mobile/image-host.jpg" alt="image-host" class="" />
+      </picture>
+    </section>
+    <section
+      class="flex flex-col items-center justify-center gap-[3.56rem] p-6"
+    >
+      <!-- Logo -->
+      <div class="">
+        <img src="/assets/desktop/logo.svg" alt="logo" class="" />
+      </div>
+      <!-- Content -->
+      <div class="flex flex-col gap-[2.25rem]">
+        <!-- Text -->
+        <div class="flex flex-col gap-4 text-center">
+          <h1
+            class="text-[1.625rem] font-light uppercase leading-[2.375rem] text-[#54E6AF]"
+          >
+            Publish your podcasts <span class="text-white">everywhere.</span>
+          </h1>
+          <p
+            class="text-[0.9375rem] font-light leading-[1.5625rem] text-[#C2CBE5]"
+          >
+            Upload your audio to Pod with a single click. We’ll then distribute
+            your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket
+            Casts and more!
+          </p>
+        </div>
+        <!-- Form & Icons -->
+        <div class="flex flex-col-reverse gap-12">
+          <!-- Icons -->
+          <div class="flex items-center justify-between">
+            <!-- Spotify -->
+            <div class="">
+              <img
+                src="/public/assets/desktop/spotify.svg"
+                alt="Spotify"
+                class="w-[3.5rem]"
+              />
+            </div>
+            <!-- Apple Podcasts -->
+            <div class="">
+              <img
+                src="/public/assets/desktop/apple-podcast.svg"
+                alt="Apple Podcasts"
+                class="w-[2.8125rem]"
+              />
+            </div>
+            <!-- Google Podcasts -->
+            <div class="">
+              <img
+                src="/public/assets/desktop/google-podcasts.svg"
+                alt="Google Podcasts"
+                class="w-[4.5625rem]"
+              />
+            </div>
+            <!-- Pocket Casts  -->
+            <div class="">
+              <img
+                src="/public/assets/desktop/pocket-casts.svg"
+                alt="Google Podcasts"
+                class="w-[4.8125rem]"
+              />
+            </div>
+          </div>
+          <!-- Form -->
+          <form action="" method="get">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+              class="h-[2.875rem] w-[20.4375rem] rounded-[1.75rem] bg-[#2C344B] pl-8 text-[0.875rem] font-normal leading-[1.75rem] text-white text-opacity-50"
+            />
+            <button
+              type="submit"
+              id="subBtn"
+              class="subBtn h-[2.875rem] w-[20.4375rem] rounded-[1.75rem] bg-[#54E6AF] text-center text-[0.875rem] font-normal leading-[1.75rem] text-[#121725]"
+              >Request Access</button
+            >
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>s
+</Layout>
+
+<style>
+  body {
+    background-color: #121725;
+  }
+  .subBtn {
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.5);
+  }
+</style>
